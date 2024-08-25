@@ -34,8 +34,8 @@
                         Poppins: 'Poppins',
                     },
                     backgroundImage: {
-                        leaf1: "url('./images/leaf01.png')",
                         call_to_action: "url('./images/call.jpg')",
+                        bannerBg: "url('./images/leaf01.png')"
                     }
                 }
             }
@@ -44,10 +44,10 @@
     <title>Organic Store</title>
 </head>
 
-<body class="font-Poppins w-11/12 mx-auto">
+<body class="font-Poppins">
     <!-- header section start -->
     <header>
-        <nav class="navbar bg-base-100 items-center">
+        <nav class="navbar max-w-screen-2xl mx-auto bg-base-100 items-center">
             <div class="navbar-start">
                 <a class=" w-24 ">
                     <img src="./images/logo.svg" alt="">
@@ -86,7 +86,32 @@
                     </ul>
                 </div>
             </div>
-            </>
+        </nav>
+        <!-- banner section -->
+        <section class=" bg-bannerBg bg-no-repeat bg-right-bottom">
+            <div class="w-full h-full bg-body bg-opacity-90">
+                <div class="max-w-screen-2xl mx-2 md:mx-auto flex flex-col md:flex-row
+                 items-center  py-20">
+                    <div class="flex-1"><img src="./images/bannerbg.png" alt="">
+                    </div>
+                    <div class="flex-1 sm:text-left text-center">
+                        <h5 class=" text-sm md:text-xl font-bold">Best Quality Products</h5>
+                        <h1 class="font-extrabold text-3xl md:text-6xl my-5 leading-tight">Join The Organic Movement!
+                        </h1>
+                        <p class="text-lg">Embrace a healthier lifestyle by joining the organic movement. Enjoy
+                            high-quality,
+                            sustainable products that nurture
+                            both you and the planet.</p>
+                        <div class=" flex sm:justify-start justify-center">
+                            <button class="btn mt-1 text-white bg-accent hover:bg-primary">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Shop Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
 </body>
 
